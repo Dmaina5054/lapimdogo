@@ -5,7 +5,7 @@ from fastapi.staticfiles import StaticFiles
 from core.config import settings
 from apis.general_pages.route_homepage import general_pages_router
 from db.session import engine
-from db.base_class import Base
+from db.base import Base
 
 app = FastAPI(title=settings.PROJECT_NAME, version=settings.PROJECT_VERSION)
 
